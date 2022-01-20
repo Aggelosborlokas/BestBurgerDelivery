@@ -1,0 +1,80 @@
+<!--<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Burger Delivery</title>
+    <link rel = "icon" href = "icon.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <br><br>
+    <img src="Best Burger Delivery.png" alt="logo" class="center">
+    <br><br><br><br>
+    <div class="container">
+      <form action="<%= request.getContextPath() %>/login" method="post">
+        <table align="center">
+          <tr>
+            <td>
+              <h2>Log-in</h2>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="username" class="label">Username:</label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                class="label"
+                name="username"
+                id="username"
+              /><br />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password" class="label">Password:</label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                class="label"
+                name="password"
+                id="password"
+              />
+              <br />
+              <br />
+              <br>
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td align="center">
+              <input
+                type="submit"
+                value="Log-in"
+                name="Log-in"
+                id="Log-in"
+                class="button"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <br/>
+    <br/><br/>
+
+    <p class="main">
+      The No1 place to order a Burger
+    </p>
+    <p class="main">
+      <a href="Views/register.jsp" class="em">Register</a>
+    </p>
+  </body>
+</html>
