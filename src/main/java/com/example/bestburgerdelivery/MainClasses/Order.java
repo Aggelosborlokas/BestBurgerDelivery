@@ -8,9 +8,6 @@ import java.io.*;
 
 
 public class Order {
-    static int orderCount = setOrderCount();
-
-    int id;
     String emailClient;
     String myDateObj;
     String address;
@@ -25,17 +22,8 @@ public class Order {
         setMyDateObj(getOrderTime());
         setCreditCardNumber(client.getCreditCardNumber());
         setEmailClient(client.getEmail());
-        setId(getOrderCount());
-        updateOrderCount();
     }
 
-    public int getId() {
-        return id;
-    }
-
-    private void setId(int id) {
-        this.id = id;
-    }
 
     private static int setOrderCount() {
         String data = "";
@@ -49,18 +37,6 @@ public class Order {
             e.printStackTrace();
         }
         return -1;
-    }
-
-    private static void updateOrderCount() {
-        try {
-            orderCount++;
-            FileWriter myWriter = new FileWriter("src/main/resources/idValue.txt");
-            myWriter.write(Integer.toString(orderCount));
-            myWriter.close();
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
     }
 
     public String getEmailClient() {
@@ -91,10 +67,6 @@ public class Order {
         LocalDateTime myDateObj = LocalDateTime.now();
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         return myDateObj.format(myFormatObj);
-    }
-
-    public static int getOrderCount() {
-        return orderCount;
     }
 
     public String getAddress() {
