@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Best Burger Delivery:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Best Burger Delivery</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BestBurgerDelivery-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Best Burger Delivery:war exploded" />
+    </root>
+  </artifact>
+</component>
