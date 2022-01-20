@@ -3,12 +3,10 @@ package com.example.bestburgerdelivery.MainClasses;
 public class Payment {
     String cardNumber;
     String cardBankId;
-    String owner;
 
-    public Payment(String cardNumber, String cardBankId, String owner) {
+    public Payment(String cardNumber, String cardBankId) {
         setCardNumber(cardNumber);
         setCardBankId(cardBankId);
-        setOwner(owner);
     }
 
     public String getCardNumber() {
@@ -25,13 +23,5 @@ public class Payment {
 
     private void setCardBankId(String cardBankId) {
         this.cardBankId = cardBankId;
-    }
-
-    public String getOwner() {
-        return owner;
-    }
-
-    private void setOwner(String owner) {
-        this.owner = owner;
     }
 }
