@@ -16,8 +16,8 @@ public class AdminD {
 
         try {
             // Make the connection
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment?useSSL=false", "root", "1234");
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Best Burger Delivery?useSSL=false", "root", "1234");
 
             // Make & Execute the Query
             Statement query = connection.createStatement();
