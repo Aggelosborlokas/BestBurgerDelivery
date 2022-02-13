@@ -10,14 +10,6 @@ public class Client extends Users{
         setAddress(address);
     }
 
-    // Methods
-    public void makeOrder(Order order){
-        //
-    }
-
-
-
-
     // Getters and Setters
     public String getName() {
         return name;
